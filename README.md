@@ -53,7 +53,7 @@ These instructions will help you set up and run the API on your local machine fo
    python manage.py runserver
    ```
 
-The API will be available at `https://basic-crud-api.onrender.com/api/`.
+The API will be available at `https://localhost:8000/api/`.
 
 ## API Endpoints
 
@@ -77,7 +77,9 @@ python manage.py test CRUD_API.tests
 
 ## Deployment
 
-To deploy this API in a production environment, you can use platforms like Heroku, AWS, or your preferred hosting service.
+The API is deployed to Render
+
+You can then access it at https://basic-crud-api.onrender.com/api/
 
 ## Built With
 

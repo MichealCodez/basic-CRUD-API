@@ -67,7 +67,7 @@ Welcome to the documentation for the Person CRUD API. This API allows you to per
    python manage.py runserver
    ```
 
-The API will be available at `https://basic-crud-api.onrender.com/api/`.
+The API will be available at `https://localhost:8000/api/`.
 
 ## API Endpoints
 
@@ -224,14 +224,9 @@ python manage.py test CRUD_API.tests
 
 ## Deployment
 
-To deploy this API locally
+The API is deployed to Render
 
-```bash
-python manage.py runserver
-```
-
-Your server will run at port 8000 with localhost
-You can then access it at http://localhost:8000/api/ 
+You can then access it at https://basic-crud-api.onrender.com/api/
 
 ## Built With
 

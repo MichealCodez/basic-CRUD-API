@@ -7,9 +7,13 @@ from .models import Person
 class APITestCase(TestCase):
     base_url = "https://basic-crud-api.onrender.com/api/"
 
+    def test_list(self):
+        response = requests.get(self.base_url)
+        self.assertEqual(response.status_code, 201)
+
     def test_create(self):
         data = {"name": "James Cole"}
-        response = requests.post(self.base_url, json=data)
+        response = requests.post(f"{self.base_url}create/", json=data)
         self.assertEqual(response.status_code, 201)
         user_id = response.json().get("id")
         self.assertIsNotNone(user_id)

@@ -3,6 +3,11 @@ from .models import Person
 from .serializers import PersonSerializer
 
 
+class ListView(generics.ListAPIView):
+    queryset = Person.objects.all()
+    serializer_class = PersonSerializer
+
+
 class CreateView(generics.CreateAPIView):
     queryset = Person.objects.all()
     serializer_class = PersonSerializer

@@ -57,7 +57,8 @@ The API will be available at `https://basic-crud-api.onrender.com/api/`.
 
 ## API Endpoints
 
-- **Create Person**: `POST /api/`
+- **List Persons**: `GET /api/`
+- **Create Person**: `POST /api/create/`
 - **Retrieve Person**: `GET /api/<int:id>/`
 - **Update Person**: `PUT /api/update/<int:id>/`
 - **Delete Person**: `DELETE /api/delete/<int:id>/`

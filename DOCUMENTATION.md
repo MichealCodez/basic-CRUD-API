@@ -9,6 +9,7 @@ Welcome to the documentation for the Person CRUD API. This API allows you to per
    - [Prerequisites](#prerequisites)
    - [Installation](#installation)
 2. [API Endpoints](#api-endpoints)
+   - [List Persons](#list-persons)
    - [Create Person](#create-person)
    - [Read Person](#read-person)
    - [Update Person](#update-person)
@@ -70,10 +71,41 @@ The API will be available at `https://basic-crud-api.onrender.com/api/`.
 
 ## API Endpoints
 
+### List Persons
+
+- **Endpoint:** `GET /api/`
+- **Description:** Retrieve a list of all persons.
+- **Authentication:** None (publicly accessible)
+
+**Usage Example:**
+
+**Request:**
+
+```http
+GET /api/
+```
+
+**Expected Result:**
+
+
+```json
+Status: 200 OK
+
+[
+    {
+        "id": 1,
+        "name": "John Doe"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith"
+    }
+]
+```
 
 ### Create Person
 
-- **Endpoint:** `POST /api/`
+- **Endpoint:** `POST /api/create/`
 - **Description:** Create a new person.
 - **Authentication:** None (publicly accessible)
 - **Request Body:** JSON data with the "name" field.
@@ -83,7 +115,7 @@ The API will be available at `https://basic-crud-api.onrender.com/api/`.
 **Request:**
 
 ```http
-POST /api/
+POST /api/create/
 Content-Type: application/json
 
 {

@@ -9,7 +9,7 @@ class APITestCase(TestCase):
 
     def test_list(self):
         response = requests.get(self.base_url)
-        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.status_code, 200)
 
     def test_create(self):
         data = {"name": "James Cole"}

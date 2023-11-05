@@ -1,4 +1,3 @@
-```markdown
 # Person CRUD API using Django Rest Framework
 
 This is a simple CRUD (Create, Read, Update, Delete) API built using Django Rest Framework (DRF) for managing persons with a single field: name.
